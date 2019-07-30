@@ -1,7 +1,7 @@
 Package: archiDART
 Type: Package
 Title: Plant Root System Architecture Analysis Using DART and RSML Files
-Version: 3.3.1
+Version: 3.3.2
 Date: 2019-07-30
 Author: Benjamin M Delory, Caroline Baudson, Yves Brostaux, Guillaume Lobet, Patrick du Jardin, Loic Pages, Pierre Delaplace 
 Maintainer: Benjamin M Delory <Benjamin.Delory@leuphana.de>
