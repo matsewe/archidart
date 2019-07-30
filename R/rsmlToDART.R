@@ -62,9 +62,16 @@ rsmlToDART <- function(rsml.path, final.date, connect){
           for (i in 1:length(age)){
             
             if (final.date %in% age[[i]]$.attrs) {
-            timeserie<-TRUE
-            time<-sapply(age[[i]][1:(length(age[[i]])-1)], xnodes)
-            if (time[1]<time[2]){time[1]<-time[2]}}}}
+              timeserie<-TRUE
+              time<-sapply(age[[i]][1:(length(age[[i]])-1)], xnodes)
+              if (length(time)<2) {} else {
+                if (time[1]<time[2]){
+                  time[1]<-time[2]
+                }
+              }
+            }
+          }
+        }
         
         if ("functions" %in% names(r1)){
           age<-r1$functions
